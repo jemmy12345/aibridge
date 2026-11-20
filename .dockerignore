@@ -12,3 +12,6 @@ docs
 /.env
 /cert/
 !THIRD-PARTY-LICENSES.md
+/.env.local
+/data-local
+/logs-local
