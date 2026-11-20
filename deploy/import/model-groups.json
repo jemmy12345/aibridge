@@ -1,0 +1,233 @@
+{
+  "_comment": "group_ratio = discount_percent / 100 (fraction of the official price). rate = RMB per 1 USD of credit, e.g. 5.0 = 5 RMB / 1 USD.",
+  "groups": [
+    {
+      "name": "Claude-Anthropic",
+      "category": "Claude",
+      "rate": 5.0,
+      "discount_percent": 75,
+      "group_ratio": 0.75,
+      "models": [
+        "claude-fable-5",
+        "claude-fable-5-1",
+        "claude-fable-5-2",
+        "claude-haiku-5-5",
+        "claude-opus-4-8",
+        "claude-opus-5-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-5-5"
+      ]
+    },
+    {
+      "name": "Claude-Vertex",
+      "category": "Claude",
+      "rate": 3.8,
+      "discount_percent": 57,
+      "group_ratio": 0.57,
+      "models": [
+        "claude-fable-5",
+        "claude-fable-5-1",
+        "claude-fable-5-2",
+        "claude-haiku-5-5",
+        "claude-opus-4-8",
+        "claude-opus-5-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-5-5"
+      ]
+    },
+    {
+      "name": "Claude-AWSB",
+      "category": "Claude",
+      "rate": 3.5,
+      "discount_percent": 52,
+      "group_ratio": 0.52,
+      "models": [
+        "claude-fable-5",
+        "claude-fable-5-1",
+        "claude-fable-5-2",
+        "claude-haiku-5-5",
+        "claude-opus-4-8",
+        "claude-opus-5-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-5-5"
+      ]
+    },
+    {
+      "name": "Claude-Max",
+      "category": "Claude",
+      "rate": 2.4,
+      "discount_percent": 36,
+      "group_ratio": 0.36,
+      "models": [
+        "claude-fable-5",
+        "claude-fable-5-1",
+        "claude-fable-5-2",
+        "claude-haiku-5-5",
+        "claude-opus-4-8",
+        "claude-opus-5-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-5-5"
+      ]
+    },
+    {
+      "name": "Claude-Max2",
+      "category": "Claude",
+      "rate": 2.0,
+      "discount_percent": 30,
+      "group_ratio": 0.3,
+      "models": [
+        "claude-fable-5",
+        "claude-fable-5-1",
+        "claude-fable-5-2",
+        "claude-haiku-5-5",
+        "claude-opus-4-8",
+        "claude-opus-5-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-5-5"
+      ]
+    },
+    {
+      "name": "GPT-OpenAI",
+      "category": "GPT",
+      "rate": 4.7,
+      "discount_percent": 70,
+      "group_ratio": 0.7,
+      "models": [
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "gpt-6-luna",
+        "gpt-6-sol",
+        "gpt-6.1-sol"
+      ]
+    },
+    {
+      "name": "GPT-Azure",
+      "category": "GPT",
+      "rate": 3.4,
+      "discount_percent": 51,
+      "group_ratio": 0.51,
+      "models": [
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "gpt-6-luna",
+        "gpt-6-sol",
+        "gpt-6.1-sol"
+      ]
+    },
+    {
+      "name": "GPT-Codex-pro",
+      "category": "GPT",
+      "rate": 0.8,
+      "discount_percent": 12,
+      "group_ratio": 0.12,
+      "models": [
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "gpt-6-luna",
+        "gpt-6-sol",
+        "gpt-6.1-sol"
+      ]
+    },
+    {
+      "name": "GPT-Codex-Plus",
+      "category": "GPT",
+      "rate": 0.6,
+      "discount_percent": 9,
+      "group_ratio": 0.09,
+      "models": [
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "gpt-6-luna",
+        "gpt-6-sol",
+        "gpt-6.1-sol"
+      ]
+    },
+    {
+      "name": "Gemini-Aistudio",
+      "category": "Gemini",
+      "rate": 2.4,
+      "discount_percent": 36,
+      "group_ratio": 0.36,
+      "models": [
+        "gemini-3.8-flash",
+        "gemini-4-argon",
+        "gemini-4-carbon"
+      ]
+    },
+    {
+      "name": "Gemini-Vertex",
+      "category": "Gemini",
+      "rate": 2.4,
+      "discount_percent": 36,
+      "group_ratio": 0.36,
+      "models": [
+        "gemini-3.8-flash",
+        "gemini-4-argon",
+        "gemini-4-carbon"
+      ]
+    },
+    {
+      "name": "Gemini-Cli-Anti",
+      "category": "Gemini",
+      "rate": 0.6,
+      "discount_percent": 9,
+      "group_ratio": 0.09,
+      "models": [
+        "gemini-3.8-flash",
+        "gemini-4-argon",
+        "gemini-4-carbon"
+      ]
+    },
+    {
+      "name": "Grok-Heavy",
+      "category": "Grok",
+      "rate": 0.7,
+      "discount_percent": 10,
+      "group_ratio": 0.1,
+      "models": [
+        "grok4.6",
+        "grok4.7"
+      ]
+    },
+    {
+      "name": "Kimi",
+      "category": "国模",
+      "rate": 4.7,
+      "discount_percent": 70,
+      "group_ratio": 0.7,
+      "models": [
+        "k3.1",
+        "k3.1pro"
+      ]
+    },
+    {
+      "name": "Deepseek",
+      "category": "国模",
+      "rate": 4.7,
+      "discount_percent": 70,
+      "group_ratio": 0.7,
+      "models": [
+        "deepseek-v4.1-flash"
+      ]
+    },
+    {
+      "name": "GLM",
+      "category": "国模",
+      "rate": 4.7,
+      "discount_percent": 70,
+      "group_ratio": 0.7,
+      "models": [
+        "glm-5.3",
+        "glm-5.3-flash"
+      ]
+    }
+  ]
+}
