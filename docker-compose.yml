@@ -13,6 +13,7 @@ services:
     image: calciumion/new-api:latest
     build:
       context: .
+      dockerfile: Dockerfile.prebuilt
     container_name: new-api
     restart: always
     command: --log-dir /app/logs
