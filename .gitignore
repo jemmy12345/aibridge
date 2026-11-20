@@ -27,6 +27,9 @@ tiktoken_cache
 .claude
 .cursor
 
+# Local TLS files must not be committed.
+/cert/
+
 electron/node_modules
 electron/dist
 /data/

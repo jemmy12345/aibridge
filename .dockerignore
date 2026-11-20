@@ -9,4 +9,6 @@ docs
 .gocache
 /web/node_modules
 /web/dist
+/.env
+/cert/
 !THIRD-PARTY-LICENSES.md

@@ -206,19 +206,23 @@ curl --fail-with-body http://localhost:3000/v1/responses \
 
 ### Docker Compose
 
-The repository's [Compose configuration](./docker-compose.yml) starts **New API + PostgreSQL + Redis** by default. It also contains examples for MySQL and a separate ClickHouse log database.
+The repository's [Compose configuration](./docker-compose.yml) starts **New API + Nginx + PostgreSQL + Redis**. It also contains examples for MySQL and a separate ClickHouse log database.
+
+For a Linux server using the included HTTPS reverse proxy, place the matching `fullchain.pem` and `privkey.pem` files in `cert/`, point `www.aibridge.xin` to the server, allow inbound TCP ports 80 and 443, then run `sudo ./deploy.sh`. The script builds the application, generates persistent database/cache/session secrets in `.env`, and starts the services. The private key is excluded from Git and Docker build contexts; keep it private and renew the certificate before it expires. After renewing either certificate file, reload the mounted files by recreating Nginx with `docker compose up -d --force-recreate nginx`.
 
 ```bash
 git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 ```
 
-Before starting, edit `docker-compose.yml`: replace the database and Redis example passwords in both the services and connection strings, and set a persistent random `SESSION_SECRET` (generate one with `openssl rand -hex 32`). For an HTTPS console, configure `SESSION_COOKIE_SECURE=true` and `SESSION_COOKIE_TRUSTED_URL` with its exact public HTTPS origin.
+Before starting, ensure the matching certificate files are in `cert/`, DNS for `www.aibridge.xin` points to this server, and TCP ports 80 and 443 are reachable. Then run the included deployment script:
 
 ```bash
-docker compose up -d
-docker compose logs -f new-api
+sudo ./deploy.sh
+docker compose logs -f new-api nginx
 ```
+
+The script creates `.env` with random PostgreSQL, Redis, and session secrets; keep this file for future restarts and upgrades. PostgreSQL, Redis, and the application port are not published to the host. The web console and API are available at `https://www.aibridge.xin`.
 
 ### Storage and configuration
 
