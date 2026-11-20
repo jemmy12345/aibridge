@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- towers -->
+    <path d="M58 46 V124 M122 46 V124" stroke-width="12"/>
+    <!-- cables -->
+    <path d="M16 112 Q36 52 58 46 Q90 104 122 46 Q144 52 164 112" stroke-width="8"/>
+    <!-- hangers -->
+    <path d="M90 82 V118" stroke-opacity=".6" stroke-width="6"/>
+    <!-- deck -->
+    <path d="M16 124 H164" stroke-width="12"/>
+  </g>
+  <!-- tokens flowing across -->
+  <circle cx="40" cy="150" r="6" fill="#fff" fill-opacity=".5"/>
+  <circle cx="90" cy="150" r="6" fill="#fff" fill-opacity=".75"/>
+  <circle cx="140" cy="150" r="6" fill="#fff"/>
+</svg>

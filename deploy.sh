@@ -51,7 +51,7 @@ chmod 600 .env
 docker compose config --quiet || fail "Compose configuration is invalid"
 
 [[ -f web/dist/index.html ]] ||
-    fail "Missing web/dist. Build it where Bun works and upload: ./build-web.sh user@host:~/aibridge"
+    fail "Missing web/dist. Run ./build-web.sh --push on a machine where Bun works, then git pull here"
 
 printf 'Building the application image...\n'
 docker compose build new-api
